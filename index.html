@@ -245,6 +245,7 @@
       }
 
       var users=[];
+      var index=0;
       function save(){
             var username=document.getElementById('name').value;
             var vechicalName=document.getElementById('vechicalName').value;
@@ -274,10 +275,11 @@
       function display(){
             save();
             var output=document.getElementById('displayDetails').innerHTML;
-            for(var i=0;i<users.length;i++){
+            for(var i=index;i<users.length;i++){
               debugger;
              document.getElementById('desplayD').style.display='block';
              output=output+"<tr>"+"<td>"+users[i].username+"</td>"+"<td>"+users[i].vechicalName+"</td>"+"<td>"+users[i].vehicalNumber+"</td>"+"<td>"+users[i].vehicalType+"</td>"+"<td>"+users[i].entryTime+"</td>"+"<td>"+users[i].exitTime+"</td>"+"</tr>"
+             index++;
            }
            document.getElementById('displayDetails').innerHTML=output;
       }
