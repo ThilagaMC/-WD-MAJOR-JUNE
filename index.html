@@ -281,7 +281,14 @@
              output=output+"<tr>"+"<td>"+users[i].username+"</td>"+"<td>"+users[i].vechicalName+"</td>"+"<td>"+users[i].vehicalNumber+"</td>"+"<td>"+users[i].vehicalType+"</td>"+"<td>"+users[i].entryTime+"</td>"+"<td>"+users[i].exitTime+"</td>"+"</tr>"
              index++;
            }
-           document.getElementById('displayDetails').innerHTML=output;
+              document.getElementById('displayDetails').innerHTML=output;
+              document.getElementById("name").value ="";
+              document.getElementById("vechicalName").value ="";
+              document.getElementById("vehicalNumber").value ="";
+              document.getElementById("vehicalType1").value ="";
+              document.getElementById("vehicalType2").value ="";
+              document.getElementById("entryTime").value ="";
+              document.getElementById("exitTime").value ="";
       }
 
 
